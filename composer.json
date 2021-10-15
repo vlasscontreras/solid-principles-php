@@ -1,0 +1,30 @@
+{
+    "name": "vlasscontreras/solid-principles",
+    "description": "A set of real-world examples of the implementation of the SOLID principles.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VlassContreras\\SolidPrinciples\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "VlassContreras\\Tests\\": "tests/" }
+    },
+    "authors": [
+        {
+            "name": "Vlass Contreras",
+            "email": "17748144+vlasscontreras@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests"
+    }
+}
