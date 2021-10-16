@@ -18,4 +18,6 @@ composer.phar
 # Build data
 /build/
 
-# End of https://www.toptal.com/developers/gitignore/api/composer,phpunit
+### macOS ###
+# Covers macOS files
+.DS_Store
