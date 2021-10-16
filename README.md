@@ -1,5 +1,7 @@
 # SOLID Principles
 
+[![tests](https://github.com/vlasscontreras/solid-principles/actions/workflows/tests.yml/badge.svg)](https://github.com/vlasscontreras/solid-principles/actions/workflows/tests.yml)
+
 SOLID is the mnemonic acronym that represents 5 design principles that aim to make software designs more understandable, flexible and sustainable.
 
 ## Single Reponsibility
@@ -24,4 +26,4 @@ High-level modules should not import anything from low-level modules. Both shoul
 
 ## License
 
-This is an open-sourced software licensed under the MIT license.
+This is an open-source project licensed under the MIT license.
