@@ -2,24 +2,25 @@
 
 namespace Vlass\Solid\SingleResponsibility;
 
-use Vlass\Solid\SingleResponsibility\Contracts\FileManager as FileManagerContract;
-
-class FileManager implements FileManagerContract
+class FileManager
 {
     /**
-     * The current file path
+     * Set up the file manager.
      *
-     * @var string
+     * @param  string  $path  Path to where the file should be written/created.
      */
-    protected string $path;
-
-    /** {@inheritdoc} */
-    public function __construct(string $path)
+    public function __construct(protected string $path)
     {
         $this->path = $path;
     }
 
-    /** {@inheritdoc} */
+    /**
+     * Append content to the file.
+     *
+     * @param   string  $content  Content to be written to the file.
+     * @param   bool    $newLine  Insert new line at the end of the input.
+     * @return  self
+     */
     public function appendToFile(string $content, bool $newLine = true): self
     {
         if ($newLine) {
@@ -31,13 +32,21 @@ class FileManager implements FileManagerContract
         return $this;
     }
 
-    /** {@inheritdoc} */
+    /**
+     * Read the contents of the current file.
+     *
+     * @return  string|null
+     */
     public function readFile(): ?string
     {
         return file_get_contents($this->path);
     }
 
-    /** {@inheritdoc} */
+    /**
+     * Delete the current file.
+     *
+     * @return  self
+     */
     public function deleteFile(): self
     {
         unlink($this->path);

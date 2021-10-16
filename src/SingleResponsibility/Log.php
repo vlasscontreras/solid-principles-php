@@ -3,29 +3,16 @@
 namespace Vlass\Solid\SingleResponsibility;
 
 use DateTime;
-use Vlass\Solid\SingleResponsibility\Contracts\Log as LogContract;
+use ReflectionClass;
+use Stringable;
 use Vlass\Solid\SingleResponsibility\Exceptions\InvalidLogLevelException;
 
-class Log implements LogContract
+class Log implements Stringable
 {
     public const LEVEL_DEBUG = 'DEBUG';
     public const LEVEL_INFO = 'INFO';
     public const LEVEL_WARNING = 'WARNING';
     public const LEVEL_ERROR = 'ERROR';
-
-    /**
-     * Log level
-     *
-     * @var string
-     */
-    protected string $level;
-
-    /**
-     * Log message
-     *
-     * @var string
-     */
-    protected string $message;
 
     /**
      * Log datetime
@@ -34,15 +21,19 @@ class Log implements LogContract
      */
     protected DateTime $dateTime;
 
-    /** {@inheritdoc} */
-    public function __construct(string $level, string $message, ?DateTime $dateTime = null)
+    /**
+     * Set up the file manager.
+     *
+     * @param  string    $level     Log level.
+     * @param  string    $message   Log message.
+     * @param  DateTime  $dateTime  Log date time.
+     */
+    public function __construct(protected string $level, protected string $message, ?DateTime $dateTime = null)
     {
         if (! $this->isValidLevel($level)) {
             throw new InvalidLogLevelException();
         }
 
-        $this->level = $level;
-        $this->message = $message;
         $this->dateTime = $dateTime ?? new DateTime();
     }
 
@@ -75,7 +66,7 @@ class Log implements LogContract
      */
     protected function getLevels(): array
     {
-        $class = new \ReflectionClass(self::class);
+        $class = new ReflectionClass(self::class);
 
         return array_values($class->getConstants());
     }

@@ -2,7 +2,6 @@
 
 namespace Vlass\Solid\SingleResponsibility;
 
-use DateTime;
 use Vlass\Solid\BaseClass;
 
 class SingleResponsibility extends BaseClass
