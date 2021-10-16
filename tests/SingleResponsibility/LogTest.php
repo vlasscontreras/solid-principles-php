@@ -21,6 +21,17 @@ class LogTest extends TestCase
     }
 
     /** @test */
+    public function testItFallsbackToCurrentDate(): void
+    {
+        $date = new DateTime();
+        $log = new Log(Log::LEVEL_DEBUG, 'Test log');
+
+        $expected = sprintf('[%s] DEBUG: Test log', $date->format('Y-m-d H:i:s'));
+
+        $this->assertEquals($expected, $log->__toString());
+    }
+
+    /** @test */
     public function testItThrowsExceptionOnInvalidLevels(): void
     {
         $this->expectException(InvalidLogLevelException::class);
