@@ -1,6 +1,6 @@
 <?php
 
-namespace VlassContreras\Tests;
+namespace Vlass\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

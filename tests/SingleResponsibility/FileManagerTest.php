@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace VlassContreras\Tests\SingleResponsibility;
+namespace Vlass\Tests\SingleResponsibility;
 
-use VlassContreras\SolidPrinciples\SingleResponsibility\FileManager;
-use VlassContreras\Tests\TestCase;
+use Vlass\Solid\SingleResponsibility\FileManager;
+use Vlass\Tests\TestCase;
 
 class FileManagerTest extends TestCase
 {

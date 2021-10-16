@@ -1,6 +1,6 @@
 <?php
 
-namespace VlassContreras\SolidPrinciples\SingleResponsibility\Contracts;
+namespace Vlass\Solid\SingleResponsibility\Contracts;
 
 interface FileManager
 {
@@ -8,7 +8,6 @@ interface FileManager
      * Set up the file manager.
      *
      * @param  string  $path  Path to where the file should be written/created.
-     * @throws \VlassContreras\Exceptions\FileNotFoundException
      */
     public function __construct(string $path);
 

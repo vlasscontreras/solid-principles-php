@@ -5,11 +5,11 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "VlassContreras\\SolidPrinciples\\": "src/"
+            "Vlass\\Solid\\": "src/"
         }
     },
     "autoload-dev": {
-        "psr-4": { "VlassContreras\\Tests\\": "tests/" }
+        "psr-4": { "Vlass\\Tests\\": "tests/" }
     },
     "authors": [
         {

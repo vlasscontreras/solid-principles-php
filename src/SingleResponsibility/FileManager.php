@@ -1,8 +1,8 @@
 <?php
 
-namespace VlassContreras\SolidPrinciples\SingleResponsibility;
+namespace Vlass\Solid\SingleResponsibility;
 
-use VlassContreras\SolidPrinciples\SingleResponsibility\Contracts\FileManager as FileManagerContract;
+use Vlass\Solid\SingleResponsibility\Contracts\FileManager as FileManagerContract;
 
 class FileManager implements FileManagerContract
 {
