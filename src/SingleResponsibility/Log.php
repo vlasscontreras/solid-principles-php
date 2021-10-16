@@ -35,7 +35,7 @@ class Log implements LogContract
     protected DateTime $dateTime;
 
     /** {@inheritdoc} */
-    public function __construct(string $level, string $message, DateTime $dateTime)
+    public function __construct(string $level, string $message, ?DateTime $dateTime = null)
     {
         if (! $this->isValidLevel($level)) {
             throw new InvalidLogLevelException();
@@ -43,7 +43,7 @@ class Log implements LogContract
 
         $this->level = $level;
         $this->message = $message;
-        $this->dateTime = $dateTime;
+        $this->dateTime = $dateTime ?? new DateTime();
     }
 
     /** {@inheritdoc} */
