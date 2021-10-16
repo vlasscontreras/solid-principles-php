@@ -24,4 +24,4 @@ High-level modules should not import anything from low-level modules. Both shoul
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the MIT license.
+This is an open-sourced software licensed under the MIT license.

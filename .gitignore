@@ -13,7 +13,6 @@ composer.phar
 
 # PHPUnit
 /app/phpunit.xml
-/phpunit.xml
 /.tests
 
 # Build data
