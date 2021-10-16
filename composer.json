@@ -36,6 +36,9 @@
         ],
         "lint:phpcs": [
             "./vendor/bin/phpcs ."
+        ],
+        "class": [
+            "@php ./src/index.php"
         ]
     },
     "config": {
