@@ -20,8 +20,12 @@ class FileManager implements FileManagerContract
     }
 
     /** {@inheritdoc} */
-    public function appendToFile(string $content): FileManagerContract
+    public function appendToFile(string $content, bool $newLine = true): self
     {
+        if ($newLine) {
+            $content = $content . PHP_EOL;
+        }
+
         file_put_contents($this->path, $content, FILE_APPEND);
 
         return $this;

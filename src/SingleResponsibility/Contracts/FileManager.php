@@ -15,9 +15,10 @@ interface FileManager
      * Append content to the file.
      *
      * @param   string  $content  Content to be written to the file.
+     * @param   bool    $newLine  Insert new line at the end of the input.
      * @return  self
      */
-    public function appendToFile(string $content): self;
+    public function appendToFile(string $content, bool $newLine = true): self;
 
     /**
      * Read the contents of the current file.
