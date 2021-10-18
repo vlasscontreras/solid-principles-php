@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenClosed;
+namespace Vlass\Solid\OpenClosed;
 
 use InvalidArgumentException;
 use Vlass\Solid\OpenClosed\PayPalPaymentProcessor;
