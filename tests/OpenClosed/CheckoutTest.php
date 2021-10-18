@@ -20,7 +20,5 @@ class CheckoutTest extends TestCase
 
         $checkout->makeTransaction(100, new StripePaymentProcessor());
         $checkout->makeTransaction(100, new PayPalPaymentProcessor());
-
-        return;
     }
 }
