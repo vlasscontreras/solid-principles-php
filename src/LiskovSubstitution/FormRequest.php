@@ -24,13 +24,7 @@ class FormRequest implements FormRequestContract
     /** {@inheritdoc} */
     public function __construct(protected array $data)
     {
-        $this->required = $this->requiredFields();
-    }
-
-    /** {@inheritdoc} */
-    public function requiredFields(): array
-    {
-        return [];
+        //
     }
 
     /** {@inheritdoc} */

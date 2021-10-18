@@ -14,13 +14,6 @@ interface FormRequest
     public function __construct(array $data);
 
     /**
-     * Get the names of the required fields.
-     *
-     * @return array
-     */
-    public function requiredFields(): array;
-
-    /**
      * Validate the current request
      *
      * @return bool
