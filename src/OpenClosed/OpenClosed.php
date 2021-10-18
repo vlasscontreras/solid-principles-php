@@ -12,6 +12,8 @@ class OpenClosed extends BaseClass
         $checkout = new Checkout();
 
         $checkout->makeTransaction(100, new StripePaymentProcessor());
+        echo PHP_EOL;
         $checkout->makeTransaction(100, new PayPalPaymentProcessor());
+        echo PHP_EOL;
     }
 }
