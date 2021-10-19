@@ -9,7 +9,7 @@ use Vlass\Tests\TestCase;
 
 class FixedCountryRepositoryTest extends TestCase
 {
-    /** {@test} */
+    /** @test */
     public function testItCanGetAllCountries()
     {
         $countryRepository = new FixedCountryRepository();
@@ -18,7 +18,7 @@ class FixedCountryRepositoryTest extends TestCase
         $this->assertCount(6, $countries);
     }
 
-    /** {@test} */
+    /** @test */
     public function testItReturnsArrayOfCountries()
     {
         $countryRepository = new FixedCountryRepository();
@@ -29,7 +29,7 @@ class FixedCountryRepositoryTest extends TestCase
         }
     }
 
-    /** {@test} */
+    /** @test */
     public function testItCanFindACountry()
     {
         $countryRepository = new FixedCountryRepository();
@@ -38,7 +38,7 @@ class FixedCountryRepositoryTest extends TestCase
         $this->assertInstanceOf(Record::class, $country);
     }
 
-    /** {@test} */
+    /** @test */
     public function testItThrowsExceptionWhenACountryIsNotFound()
     {
         $this->expectException(RecordNotFoundException::class);
