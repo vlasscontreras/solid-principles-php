@@ -3,16 +3,16 @@
 namespace Vlass\Tests\InterfaceSegregation;
 
 use Vlass\Solid\InterfaceSegregation\Contracts\Record;
-use Vlass\Solid\InterfaceSegregation\CountryRepository;
+use Vlass\Solid\InterfaceSegregation\FixedCountryRepository;
 use Vlass\Solid\InterfaceSegregation\Exceptions\RecordNotFoundException;
 use Vlass\Tests\TestCase;
 
-class CountryRepositoryTest extends TestCase
+class FixedCountryRepositoryTest extends TestCase
 {
     /** {@test} */
     public function testItCanGetAllCountries()
     {
-        $countryRepository = new CountryRepository();
+        $countryRepository = new FixedCountryRepository();
         $countries = $countryRepository->all();
 
         $this->assertCount(6, $countries);
@@ -21,7 +21,7 @@ class CountryRepositoryTest extends TestCase
     /** {@test} */
     public function testItReturnsArrayOfCountries()
     {
-        $countryRepository = new CountryRepository();
+        $countryRepository = new FixedCountryRepository();
         $countries = $countryRepository->all();
 
         foreach ($countries as $country) {
@@ -32,7 +32,7 @@ class CountryRepositoryTest extends TestCase
     /** {@test} */
     public function testItCanFindACountry()
     {
-        $countryRepository = new CountryRepository();
+        $countryRepository = new FixedCountryRepository();
         $country = $countryRepository->find('SV');
 
         $this->assertInstanceOf(Record::class, $country);
@@ -43,7 +43,7 @@ class CountryRepositoryTest extends TestCase
     {
         $this->expectException(RecordNotFoundException::class);
 
-        $countryRepository = new CountryRepository();
+        $countryRepository = new FixedCountryRepository();
         $country = $countryRepository->find('TEST');
     }
 }

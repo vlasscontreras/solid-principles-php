@@ -5,7 +5,7 @@ namespace Vlass\Solid\InterfaceSegregation;
 use Vlass\Solid\InterfaceSegregation\Contracts\ReadRepository;
 use Vlass\Solid\InterfaceSegregation\Exceptions\RecordNotFoundException;
 
-class CountryRepository implements ReadRepository
+class FixedCountryRepository implements ReadRepository
 {
     /**
      * {@inheritdoc}
