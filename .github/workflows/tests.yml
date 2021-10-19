@@ -10,7 +10,7 @@ jobs:
     - name: Checkout 🛎
       uses: actions/checkout@v2
 
-    - name: Autoload Classes 👨🏻‍💻
+    - name: Install dependencies 👨🏻‍💻
       uses: php-actions/composer@v6
       with:
         php_version: 8.0
