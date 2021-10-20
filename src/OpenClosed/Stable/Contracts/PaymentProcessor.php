@@ -5,7 +5,7 @@ namespace Vlass\Solid\OpenClosed\Stable\Contracts;
 interface PaymentProcessor
 {
     /**
-     * Log message.
+     * Run a payment.
      *
      * @param  int  $amount  Amount in cents.
      * @return bool
