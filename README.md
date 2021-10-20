@@ -2,11 +2,15 @@
 
 [![tests](https://github.com/vlasscontreras/solid-principles/actions/workflows/tests.yml/badge.svg)](https://github.com/vlasscontreras/solid-principles/actions/workflows/tests.yml)
 
-SOLID is the mnemonic acronym that represents 5 design principles that aim to make software designs more understandable, flexible and sustainable.
+SOLID is the mnemonic acronym that represents 5 design principles that aim to make software designs more understandable, flexible, and sustainable.
 
-## Single Reponsibility
+In this repository, you will find a folder under `src/` for each principle and each principle has two folders: one for the **stable** version and one for the **unstable** version.
 
-Each entity (module, class, or function) should have a single responsibility over a part of a feature in a system, and this responsibility should be encapsulated. In other words, each module should be responsible for a single thing or have only one reason to change.
+The `Stable` folder contains one of the possible ways to apply the principle to the given use case. The `Unstable` folder contains an example of how the same use case would be without applying the principle.
+
+## Single Responsibility
+
+Each entity (module, class, or function) should have a single responsibility for a part of a feature in a system, and this responsibility should be encapsulated. In other words, each module should be responsible for a single thing or have only one reason to change.
 
 ## Open-Closed
 
