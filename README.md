@@ -8,26 +8,50 @@ In this repository, you will find a folder under `src/` for each principle and e
 
 The `Stable` folder contains one of the possible ways to apply the principle to the given use case. The `Unstable` folder contains an example of how the same use case would be without applying the principle.
 
-## Single Responsibility
+## 💿 Installation
+
+Install the dependencies:
+
+```sh
+composer install --prefer-dist
+```
+
+## 🙋🏻 Usage
+
+Run the classes by specifying the principle name (either in snake_case or kebab-case) and optionally the stable/unstable flag.
+
+```sh
+composer class [principle-name] [stable|unstable]
+```
+
+Example:
+
+```sh
+composer class single-responsibility stable
+```
+
+## 🤓 Content
+
+### Single Responsibility
 
 Each entity (module, class, or function) should have a single responsibility for a part of a feature in a system, and this responsibility should be encapsulated. In other words, each module should be responsible for a single thing or have only one reason to change.
 
-## Open-Closed
+### Open-Closed
 
 Each entity should be closed for modification but open for extension.
 
-## Liskov Substitution
+### Liskov Substitution
 
 If B is a subtype of A, then objects of type A should be exchangeable by objects of type B without affecting the desired result.
 
-## Interface Segregation
+### Interface Segregation
 
 A client should not be forced to depend on methods it does not use.
 
-## Dependency Inversion
+### Dependency Inversion
 
 High-level modules should not import anything from low-level modules. Both should depend on abstractions.
 
-## License
+## 📃 License
 
 This is an open-source project licensed under the MIT license.
