@@ -15,6 +15,7 @@ class LiskovSubstitution extends BaseClass
         $createUserRequest = new CreateUserRequest([
             'email'    => 'admin@test.com',
             'password' => 'secret',
+            'is_admin' => true,
         ]);
 
         $controller->handleRequest($createUserRequest);
@@ -23,6 +24,7 @@ class LiskovSubstitution extends BaseClass
         $createUserRequest = new FormRequest([
             'email'    => 'admin@test.com',
             'password' => 'secret',
+            'is_admin' => true,
         ]);
 
         $controller->handleRequest($createUserRequest);

@@ -3,9 +3,19 @@
 namespace Vlass\Solid\OpenClosed\Unstable;
 
 use InvalidArgumentException;
+use Vlass\Solid\BaseClass;
 
-class OpenClosed
+class OpenClosed extends BaseClass
 {
+    /** {@inheritdoc} */
+    public static function run(): void
+    {
+        self::makeTransaction(100, 'stripe');
+        echo PHP_EOL;
+        self::makeTransaction(100, 'paypal');
+        echo PHP_EOL;
+    }
+
     /**
      * Make a transaction
      *
@@ -14,7 +24,7 @@ class OpenClosed
      * @return void
      * @throws InvalidArgumentException
      */
-    public function makeTransaction(int $amount, string $processor)
+    public static function makeTransaction(int $amount, string $processor)
     {
         switch ($processor) {
             case 'stripe':
