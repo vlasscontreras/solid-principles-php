@@ -2,10 +2,10 @@
 
 namespace Vlass\Tests\InterfaceSegregation;
 
-use Vlass\Solid\InterfaceSegregation\Contracts\Record;
-use Vlass\Solid\InterfaceSegregation\Country;
-use Vlass\Solid\InterfaceSegregation\MemoryCountryRepository;
-use Vlass\Solid\InterfaceSegregation\Exceptions\RecordNotFoundException;
+use Vlass\Solid\InterfaceSegregation\Stable\Contracts\Record;
+use Vlass\Solid\InterfaceSegregation\Stable\Country;
+use Vlass\Solid\InterfaceSegregation\Stable\MemoryCountryRepository;
+use Vlass\Solid\InterfaceSegregation\Stable\Exceptions\RecordNotFoundException;
 use Vlass\Tests\TestCase;
 
 class MemoryCountryRepositoryTest extends TestCase

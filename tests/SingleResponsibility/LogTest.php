@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Vlass\Tests\SingleResponsibility;
 
 use DateTime;
-use Vlass\Solid\SingleResponsibility\Exceptions\InvalidLogLevelException;
-use Vlass\Solid\SingleResponsibility\Log;
+use Vlass\Solid\SingleResponsibility\Stable\Exceptions\InvalidLogLevelException;
+use Vlass\Solid\SingleResponsibility\Stable\Log;
 use Vlass\Tests\TestCase;
 
 class LogTest extends TestCase

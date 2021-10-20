@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Vlass\Tests\OpenClosed;
 
-use Vlass\Solid\OpenClosed\PayPalPaymentProcessor;
+use Vlass\Solid\OpenClosed\Stable\PayPalPaymentProcessor;
 use Vlass\Tests\TestCase;
 
 class PayPalPaymentProcessorTest extends TestCase

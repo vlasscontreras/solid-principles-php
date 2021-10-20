@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Vlass\Tests\SingleResponsibility;
 
-use Vlass\Solid\SingleResponsibility\FileManager;
+use Vlass\Solid\SingleResponsibility\Stable\FileManager;
 use Vlass\Tests\TestCase;
 
 class FileManagerTest extends TestCase

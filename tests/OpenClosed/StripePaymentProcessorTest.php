@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Vlass\Tests\OpenClosed;
 
-use Vlass\Solid\OpenClosed\StripePaymentProcessor;
-use Vlass\Solid\OpenClosed\FileManager;
-use Vlass\Solid\OpenClosed\Log;
+use Vlass\Solid\OpenClosed\Stable\StripePaymentProcessor;
+use Vlass\Solid\OpenClosed\Stable\FileManager;
+use Vlass\Solid\OpenClosed\Stable\Log;
 use Vlass\Tests\TestCase;
 
 class StripePaymentProcessorTest extends TestCase

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Vlass\Tests\LiskovSubstitution;
 
-use Vlass\Solid\LiskovSubstitution\CreateUserRequest;
-use Vlass\Solid\LiskovSubstitution\Exceptions\ValidationException;
+use Vlass\Solid\LiskovSubstitution\Stable\CreateUserRequest;
+use Vlass\Solid\LiskovSubstitution\Stable\Exceptions\ValidationException;
 use Vlass\Tests\TestCase;
 
 class CreateUserRequestTest extends TestCase

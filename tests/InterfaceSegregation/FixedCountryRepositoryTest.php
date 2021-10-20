@@ -2,9 +2,9 @@
 
 namespace Vlass\Tests\InterfaceSegregation;
 
-use Vlass\Solid\InterfaceSegregation\Contracts\Record;
-use Vlass\Solid\InterfaceSegregation\FixedCountryRepository;
-use Vlass\Solid\InterfaceSegregation\Exceptions\RecordNotFoundException;
+use Vlass\Solid\InterfaceSegregation\Stable\Contracts\Record;
+use Vlass\Solid\InterfaceSegregation\Stable\FixedCountryRepository;
+use Vlass\Solid\InterfaceSegregation\Stable\Exceptions\RecordNotFoundException;
 use Vlass\Tests\TestCase;
 
 class FixedCountryRepositoryTest extends TestCase

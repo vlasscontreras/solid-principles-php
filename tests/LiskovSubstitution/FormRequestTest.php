@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Vlass\Tests\LiskovSubstitution;
 
-use Vlass\Solid\LiskovSubstitution\FormRequest;
+use Vlass\Solid\LiskovSubstitution\Stable\FormRequest;
 use Vlass\Tests\TestCase;
 
 class FormRequestTest extends TestCase

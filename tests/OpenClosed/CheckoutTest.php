@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Vlass\Tests\OpenClosed;
 
-use Vlass\Solid\OpenClosed\Checkout;
-use Vlass\Solid\OpenClosed\StripePaymentProcessor;
-use Vlass\Solid\OpenClosed\PayPalPaymentProcessor;
+use Vlass\Solid\OpenClosed\Stable\Checkout;
+use Vlass\Solid\OpenClosed\Stable\StripePaymentProcessor;
+use Vlass\Solid\OpenClosed\Stable\PayPalPaymentProcessor;
 use Vlass\Tests\TestCase;
 
 class CheckoutTest extends TestCase
