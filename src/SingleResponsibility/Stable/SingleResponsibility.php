@@ -12,7 +12,7 @@ class SingleResponsibility extends BaseClass
         $log = new Log(Log::LEVEL_INFO, 'This should be on a file');
         $fileManager = new FileManager('log.txt');
 
-        $fileManager->appendToFile($log);
+        $fileManager->appendToFile($log->toString());
 
         echo 'Outputted to log.txt' . PHP_EOL;
     }

@@ -4,10 +4,9 @@ namespace Vlass\Solid\SingleResponsibility\Stable;
 
 use DateTime;
 use ReflectionClass;
-use Stringable;
 use Vlass\Solid\SingleResponsibility\Stable\Exceptions\InvalidLogLevelException;
 
-class Log implements Stringable
+class Log
 {
     public const LEVEL_DEBUG = 'DEBUG';
     public const LEVEL_INFO = 'INFO';
@@ -37,8 +36,12 @@ class Log implements Stringable
         $this->dateTime = $dateTime ?? new DateTime();
     }
 
-    /** {@inheritdoc} */
-    public function __toString(): string
+    /**
+     * Get the string representation of the log object.
+     *
+     * @return string
+     */
+    public function toString(): string
     {
         return sprintf(
             '[%1$s] %2$s: %3$s',

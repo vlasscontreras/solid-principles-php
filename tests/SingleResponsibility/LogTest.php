@@ -17,7 +17,7 @@ class LogTest extends TestCase
         $date = new DateTime('2021-10-15T19:38:00');
         $log = new Log(Log::LEVEL_DEBUG, 'Test log', $date);
 
-        $this->assertEquals('[2021-10-15 19:38:00] DEBUG: Test log', $log->__toString());
+        $this->assertEquals('[2021-10-15 19:38:00] DEBUG: Test log', $log->toString());
     }
 
     /** @test */
@@ -28,7 +28,7 @@ class LogTest extends TestCase
 
         $expected = sprintf('[%s] DEBUG: Test log', $date->format('Y-m-d H:i:s'));
 
-        $this->assertEquals($expected, $log->__toString());
+        $this->assertEquals($expected, $log->toString());
     }
 
     /** @test */
