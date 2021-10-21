@@ -52,6 +52,14 @@ A client should not be forced to depend on methods it does not use.
 
 High-level modules should not import anything from low-level modules. Both should depend on abstractions.
 
+## Material
+
+**Agile Software Development: Principles, Patterns, and Practices:**
+https://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445
+
+**Clean Architecture: A Craftsman's Guide to Software Structure and Design:**
+https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
+
 ## 📃 License
 
 This is an open-source project licensed under the MIT license.
